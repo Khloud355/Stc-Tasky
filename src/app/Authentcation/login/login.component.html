@@ -1,0 +1,31 @@
+<div class="login">
+<div class="login-content">
+<form [formGroup]="loginData" (ngSubmit)="onSubmit()">
+  <div class="form-group">
+    <label for="name">{{"UserName" |translate}}</label>
+    <input
+      class="inputclass"
+      type="name"
+      id="name"
+      formControlName="username"
+      [placeholder]="'Enter UserName' | translate"
+    />
+    <!-- <div class="errorclass" *ngIf="f.email?.errors?.email">Please enter a vaild email address</div> -->
+  </div>
+  <div class="form-group">
+    <label for="pass">{{"Password" | translate}}</label>
+    <input
+      class="inputclass"
+      type="password"
+      id="pass"
+      formControlName="password"
+      [placeholder]="'Enter password' | translate"
+    />
+    <!-- <div class="errorclass" *ngIf="f.email?.errors?.email">Please enter a vaild email address</div> -->
+  </div>
+  <div class="loginbtn">
+  <button type="submit">{{"Login" |translate}}</button>
+</div>
+</form>
+</div>
+</div>

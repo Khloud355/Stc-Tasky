@@ -1,0 +1,11 @@
+
+<div>
+
+<app-admin-view *ngIf="adminview else userview"
+
+></app-admin-view>
+<ng-template #userview>
+  <app-user-view></app-user-view>
+</ng-template>
+</div>
+

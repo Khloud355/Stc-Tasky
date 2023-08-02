@@ -1,0 +1,84 @@
+@import "../../../../styles.scss";
+:host::ng-deep {
+  [dir="rtl"] & {
+  .titletable{
+  //   padding-right: 13rem !important;
+  //  padding-left: unset;
+  }
+  .colstyle{
+    padding-left: 6rem;
+    padding-right: unset;
+  }
+.colstylecate{
+  padding-left: 13rem;
+  padding-right: unset;
+}
+
+  }
+}
+.admin-view {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 2rem 0;
+  h2 {
+    margin: 0;
+  }
+  .adding {
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    background: cornflowerblue;
+    color: #fff;
+    font-weight: 500;
+  }
+}
+table {
+  // margin-top: 3rem;
+  width: 100%;
+}
+button {
+  border: none;
+  // margin-left: 3px;
+  border-radius: 5px;
+  img {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+}
+.action {
+  display: flex;
+}
+.titletable{
+  padding-left: 13rem;
+}
+.colstyle{
+  padding-right: 6rem;
+}
+.colstylecate{
+  padding-right: 12rem;
+}
+tr {
+  grid-template-columns: repeat(5, 1fr);
+}
+.btn {
+  font-size: 14px;
+  padding: 0.5rem 2rem;
+}
+.modal-body {
+  form {
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      margin-top: 1rem;
+      input,
+      textarea {
+        margin-top: 5px;
+        border-radius: 5px;
+        padding: 5px 10px;
+        border: 1px solid #ccc;
+      }
+    }
+  }
+}

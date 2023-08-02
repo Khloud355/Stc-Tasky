@@ -1,0 +1,16 @@
+<span *ngIf="products.length == 0" class="loader"></span>
+<div class="user-view" *ngIf="products.length != 0">
+  <div class="category" *ngFor="let cate of products">
+    <ng-container *ngIf="cate.arr.length != 0">
+      <div class="more">
+      <h1 class="main-title">{{ cate.name }}</h1>
+      <a class="morelink"[routerLink]="['allproducts', cate.name]">{{'See More' | translate}}</a>
+    </div>
+      <div class="row">
+        <div class="col-md-3" *ngFor="let prod of cate.arr.slice(0, 4)">
+       <app-shared-card [prod]="prod"></app-shared-card>
+        </div>
+      </div>
+    </ng-container>
+  </div>
+</div>

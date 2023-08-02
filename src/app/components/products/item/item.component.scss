@@ -1,0 +1,28 @@
+.item{
+  margin: 3rem 0;
+  .image{
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+    img{
+      width: 25rem;
+    height: 22rem;
+    }
+  }
+  .price{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .prices{
+      font-size: 15px;
+      font-weight: 600;
+    }
+    .cate{
+      font-weight: 600;
+      text-decoration: underline;
+    }
+  }
+
+}

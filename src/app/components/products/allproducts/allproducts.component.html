@@ -1,0 +1,9 @@
+<div class="all-product">
+<span *ngIf="!allproducts" class="loader"></span>
+<h1 *ngIf="allproducts">{{this.routee}}</h1>
+<div class="row">
+  <div class="col-md-3" *ngFor="let product of allproducts">
+    <app-shared-card [prod]="product"></app-shared-card>
+  </div>
+</div>
+</div>

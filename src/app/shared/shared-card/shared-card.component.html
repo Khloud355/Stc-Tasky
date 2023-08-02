@@ -1,0 +1,20 @@
+<div class="card-data">
+<a [routerLink]="['/item', prod.id]">
+  <div class="image">
+    <img [src]="prod.image" alt="" />
+  </div>
+  <div class="content">
+    <h5 class="title" [matTooltip]="prod.title" aria-label="edit item">
+      {{ prod.title }}
+    </h5>
+    <p class="des" [matTooltip]="prod.description" aria-label="edit item">
+      {{ prod.description }}
+    </p>
+    <div class="details">
+      <span class="price">{{ prod.price }} <span class="currency">EGP</span>
+      </span>
+      <div class="rating"></div>
+    </div>
+  </div>
+</a>
+</div>

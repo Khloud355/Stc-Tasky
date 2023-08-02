@@ -1,0 +1,21 @@
+<span *ngIf="!signleItem" class="loader"></span>
+<div class="item" *ngIf="signleItem">
+  <div class="row">
+    <div class="col-md-6">
+      <div class="image">
+        <img [src]="signleItem.image" alt="">
+      </div>
+
+    </div>
+    <div class="col-md-1"></div>
+    <div class="col-md-5">
+      <h1 class="title">{{signleItem.title}}</h1>
+      <p class="desc">{{signleItem.description}}</p>
+      <div class="price">
+        <div class="prices">{{signleItem.price}}EGP</div>
+        <div class="cate">{{signleItem.category}}</div>
+      </div>
+      <button class="add-btnn">Add To Cart</button>
+    </div>
+  </div>
+</div>

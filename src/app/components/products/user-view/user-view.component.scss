@@ -1,0 +1,66 @@
+.user-view {
+  .row {
+    gap: 30px;
+    .col-md-3 {
+      width: 23%;
+    }
+  }
+  .category {
+    margin-top: 2rem;
+    .more{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .morelink{
+        text-decoration: underline;
+        font-weight: 600;
+        margin: 1rem;
+      }
+    }
+    .main-title{
+      font-weight: 600;
+      margin: 0;
+    }
+    a{
+      text-decoration: none;
+      color: #000;
+      cursor: pointer;
+    }
+  }
+  .card-data {
+    border: 1px solid #ccc;
+    padding: 1rem;
+    border-radius: 12px;
+    height: 21rem;
+    .title {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+
+      font-weight: 600;
+      font-size: 15px;
+    }
+    p {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .content {
+      margin-top: 1rem;
+
+    }
+    .price{
+font-size: 15px;
+font-weight: 600;
+text-decoration: underline;
+    }
+    .image {
+      display: flex;
+      justify-content: center;
+      img {
+        width: 10rem;
+        height: 12rem;
+      }
+    }
+  }
+}
